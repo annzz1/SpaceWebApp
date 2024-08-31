@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)http://127.0.0.1:5500/index.html# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./SPACE_files/style.css">
+    <title>SPACE</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li id="logo"><a href="http://127.0.0.1:5500/index.html#">SPACE</a></li>
+                <li><a href="http://127.0.0.1:5500/index.html#">Home</a></li>
+                <li><a href="http://127.0.0.1:5500/index.html#about">About</a></li>
+                <li><a href="http://127.0.0.1:5500/index.html#services">Services</a></li>
+                <li><a href="http://127.0.0.1:5500/index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="slider">
+        <div class="slide">
+          <img src="./SPACE_files/main_image_star-forming_region_carina_nircam_final-5mb.jpeg" alt="Image 1">
+          <div class="slide-text">THE DREAM IS ALIVE.</div>
+        </div>
+        <div class="slide">
+          <img src="./SPACE_files/heic0506b.jpg" alt="Image 2">
+          <div class="slide-text text-1">THE STARS DON'T LOOK BIGGER, 
+            BUT THEY DO LOOK BRIGHTER.</div>
+        </div>
+        <div class="slide">
+            <img src="./SPACE_files/heic2007a.jpg" alt="Image 3">
+            <div class="slide-text text-2">BEYOND THE LIMITS.</div>
+          </div>
+          <div class="slide">
+            <img src="./SPACE_files/heic0406a.jpg" alt="Image 4">
+            <div class="slide-text text-3">EXPORE THE UNKNOWN.</div>
+          </div>
+     </div>
+     <div class="info-bar">
+      <aside class="aside-infobar">
+        <div class="text-container">
+          <h2>Lorem Ipsum.</h2>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+            It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<br><br>
+            Contrary to popular belief, Lorem Ipsum is not simply random text. 
+            It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. 
+            Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.
+        </p>
+        </div>
+      </aside>
+      <div class="image-container">
+        <img src="./SPACE_files/astronaut.png" alt="image">
+      </div>
+    </div>
+    <div class="news-bar">
+      <div class="newsinside-bar">
+        <div class="newsinside-bar-img">
+          <img src="./SPACE_files/heic2017a.jpg" alt="saturn">
+        </div>
+        <div class="newsinside-bar-text">
+          <h3>Strange planets: ‘Puffy Jupiter' among new worlds found beyond our solar system</h3>
+          <a href="http://127.0.0.1:5500/index.html#">Read More</a>
+        </div>
+      </div>
+      <div class="newsinside-bar">
+        <div class="newsinside-bar-img">
+          <img src="./SPACE_files/northlighting.png" alt="saturn">
+        </div>
+        <div class="newsinside-bar-text">
+          <h3>How auroras on Earth, Saturn and Jupiter could help forecast risky space weather</h3>
+          <a href="http://127.0.0.1:5500/index.html#">Read More</a>
+        </div>
+      </div>
+      <div class="newsinside-bar">
+        <div class="newsinside-bar-img">
+          <img src="./SPACE_files/earth.png" alt="saturn">
+        </div>
+        <div class="newsinside-bar-text">
+          <h3>A New Deep Learning Algorithm Can Find Earth 2.0. Are we ready for huge changes?
+          </h3>
+          <a href="http://127.0.0.1:5500/index.html#">Read More</a>
+        </div>
+      </div>
+      
+    </div>
+    <footer>
+      elo
+    </footer>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
